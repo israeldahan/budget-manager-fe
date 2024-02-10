@@ -1,3 +1,4 @@
+import { useContext } from "react"
 import Link from "next/link"
 
 import { siteConfig } from "@/config/site"
@@ -19,8 +20,8 @@ export default function Home() {
         </p>
         <div className="flex gap-2">
           <Link
-            href={siteConfig.links.github}
-            target="_blank"
+            href="/login"
+            // target="_blank"
             className={cn(buttonVariants({ size: "default" }))}
           >
             Get Started
